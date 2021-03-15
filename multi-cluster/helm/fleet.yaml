@@ -6,7 +6,7 @@ targetCustomizations:
       replication: false
   clusterSelector:
     matchLabels:
-      env: dev
+      env: davidh-dev
 
 - name: test
   helm:
@@ -14,7 +14,7 @@ targetCustomizations:
       replicas: 3
   clusterSelector:
     matchLabels:
-      env: test
+      env: davidh-test
 
 - name: prod
   helm:
@@ -23,4 +23,4 @@ targetCustomizations:
       replicas: 3
   clusterSelector:
     matchLabels:
-      env: prod
+      env: davidh-prod
