@@ -24,15 +24,15 @@ spec:
   - name: dev
     clusterSelector:
       matchLabels:
-        env: dev
+        env: davidh-dev
 
   - name: test
     clusterSelector:
       matchLabels:
-        env: test
+        env: davidh-test
 
   - name: prod
     clusterSelector:
       matchLabels:
-        env: prod
+        env: davidh-prod
 ```
